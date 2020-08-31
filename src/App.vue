@@ -1,20 +1,31 @@
 <template>
   <div id="app">
-    <router-view name="Header" />
-    <br />
+    <!-- <router-view name="Header" /> -->
+    <!-- <br /> -->
     <div class="container">
       <div class="jumbotron">
-        <transition name="slide">
+        <!-- <transition name="slide">
           <router-view />
-        </transition>
+        </transition> -->
+        <h1>Vuex Setion</h1>
+        <hr>
+        <Result />
+        <br>
+        <Counter />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Counter from './components/Counter'
+import Result from './components/Result'
+
 export default {
-  name: "App",  
+  name: "App",
+  components: {
+    Counter, Result
+  }
 };
 </script>
 
